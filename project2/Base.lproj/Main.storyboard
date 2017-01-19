@@ -21,28 +21,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gef-PI-I7T">
-                                <rect key="frame" x="113" y="65" width="200" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gef-PI-I7T">
+                                <rect key="frame" x="87.5" y="100" width="200" height="100"/>
                                 <state key="normal" image="us"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6e-2P-1Ro">
-                                <rect key="frame" x="113" y="195" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6e-2P-1Ro">
+                                <rect key="frame" x="87.5" y="230" width="200" height="100"/>
                                 <state key="normal" image="us"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhL-iF-ROS">
-                                <rect key="frame" x="113" y="325" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhL-iF-ROS">
+                                <rect key="frame" x="87.5" y="360" width="200" height="100"/>
                                 <state key="normal" image="us"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Y6e-2P-1Ro" firstAttribute="centerX" secondItem="gef-PI-I7T" secondAttribute="centerX" id="5Nh-bl-b7O"/>
+                            <constraint firstItem="Y6e-2P-1Ro" firstAttribute="top" secondItem="gef-PI-I7T" secondAttribute="bottom" constant="30" id="CV3-cv-sTg"/>
+                            <constraint firstItem="uhL-iF-ROS" firstAttribute="top" secondItem="Y6e-2P-1Ro" secondAttribute="bottom" constant="30" id="Reh-yf-ceZ"/>
                             <constraint firstItem="gef-PI-I7T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y1J-v4-3AW"/>
                             <constraint firstItem="gef-PI-I7T" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="p3h-Rh-fZ4"/>
+                            <constraint firstItem="uhL-iF-ROS" firstAttribute="centerX" secondItem="Y6e-2P-1Ro" secondAttribute="centerX" id="zVE-Wo-dII"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ACV-gY-sYQ"/>
+                    <connections>
+                        <outlet property="button1" destination="gef-PI-I7T" id="nZQ-dB-5oa"/>
+                        <outlet property="button2" destination="Y6e-2P-1Ro" id="YKS-kc-iIN"/>
+                        <outlet property="button3" destination="uhL-iF-ROS" id="svP-aQ-snD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
